@@ -27,8 +27,8 @@
 
 ### Milestone Two: Software Design & Engineering
 
-**Narrative:** [Milestone Two Narrative Update](MilestoneTwo_NarrativeUpdate.htm)
-**Java Code:** [Boarding Manager](BoardingManager.java)
-**Java Code:** [New Dog Class](NewDog.java)
-**Java Code:** [New Pet Class](NewPet.java)
+* **Narrative:** [Milestone Two Narrative Update](MilestoneTwo_NarrativeUpdate.htm)
+* **Java Code:** [Boarding Manager](BoardingManager.java)
+* **Java Code:** [New Dog Class](NewDog.java)
+* **Java Code:** [New Pet Class](NewPet.java)
 
