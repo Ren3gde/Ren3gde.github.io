@@ -3,9 +3,16 @@
   <source src="Pet.java_CodeReview.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-* **Overview:** A detailed structural analysis of a Java-based pet management system focusing on core OOP principles.
-* **Key Enhancements:** Refactored messy conditional statements into a clean inheritance hierarchy using a polymorphic base class.
+* **Overview:** This portfolio is a terminal-based Pet Boarding Management Application that tracks pet registration data, allocates physical kennel resources, and manages administrative checkouts.
+* **Key Enhancements:** Inheritance Refactoring: The subclass structure was redesigned to establish clean constructor delegation using super(). Financial Type Safety: By stripping away inaccurate primitive types, it directly neutralized the binary floating-point rounding bugs common in native Java math.
 * **Design Patterns:** Implemented the Encapsulation pattern to safeguard data mutation and applied standard Java naming conventions to enhance maintainability.
+
+### Milestone Two: Software Design & Engineering
+
+* **Narrative:** [Milestone Two Narrative Update](MilestoneTwo_NarrativeUpdate.htm)
+* **Java Code:** [Boarding Manager](BoardingManager.java)
+* **Java Code:** [New Dog Class](NewDog.java)
+* **Java Code:** [New Pet Class](NewPet.java)
 
 ### Code Review: Grazioso Salvare Walkthrough
 <video width="100%" controls style="max-width: 800px; margin-bottom: 25px;">
@@ -25,10 +32,4 @@
 * **Key Enhancements:** Refactored business logic workflows to minimize redundant checks, significantly accelerating processing times for returns.
 * **Design Patterns:** Implemented standardized validation schemas to guarantee data uniformity across external databases and mitigate cross-system calculation errors.
 
-### Milestone Two: Software Design & Engineering
-
-* **Narrative:** [Milestone Two Narrative Update](MilestoneTwo_NarrativeUpdate.htm)
-* **Java Code:** [Boarding Manager](BoardingManager.java)
-* **Java Code:** [New Dog Class](NewDog.java)
-* **Java Code:** [New Pet Class](NewPet.java)
 
