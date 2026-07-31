@@ -1,3 +1,5 @@
+### Software Design & Engineering
+
 ### Code Review: Pet.java Walkthrough
 <video width="100%" controls style="max-width: 800px; margin-bottom: 25px;">
   <source src="Pet.java_CodeReview.mp4" type="video/mp4">
@@ -7,7 +9,7 @@
 * **Key Enhancements:** Inheritance Refactoring: The subclass structure was redesigned to establish clean constructor delegation using super(). Financial Type Safety: By stripping away inaccurate primitive types, it directly neutralized the binary floating-point rounding bugs common in native Java math.
 * **Design Patterns:** Implemented the Encapsulation pattern to safeguard data mutation and applied standard Java naming conventions to enhance maintainability.
 
-### Milestone Two: Software Design & Engineering
+### Finalized Enhancements
 
 * **Narrative:** [Milestone Two Narrative Update](MilestoneTwo_NarrativeUpdate.htm)
 * **Java Code:** [Boarding Manager](BoardingManager.java)
