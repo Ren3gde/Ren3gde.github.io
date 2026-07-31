@@ -25,5 +25,10 @@
 * **Key Enhancements:** Refactored business logic workflows to minimize redundant checks, significantly accelerating processing times for returns.
 * **Design Patterns:** Implemented standardized validation schemas to guarantee data uniformity across external databases and mitigate cross-system calculation errors.
 
+### Milestone Two: Software Design & Engineering
 
+**Narrative:** [Milestone Two Narrative Update](MilestoneTwo_NarrativeUpdate.htm)
+**Java Code:** [Boarding Manager](BoardingManager.java)
+**Java Code:** [New Dog Class](NewDog.java)
+**Java Code:** [New Pet Class](NewPet.java)
 
