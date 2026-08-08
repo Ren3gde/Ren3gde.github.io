@@ -2069,9 +2069,9 @@ structures, front-end UI architecture, and system security:<o:p></o:p></span></p
  <li class=MsoNormal style='mso-list:l0 level1 lfo1;tab-stops:list .5in'><b><span
      style='font-family:"Times New Roman",serif'>Algorithmic Upgrades:</span></b><span
      style='font-family:"Times New Roman",serif'> The backend filtering
-     pipeline was thoroughly re-engineered. I replaced an unoptimized <p>O(N<sup>2</sup>)</p>
+     pipeline was thoroughly re-engineered. I replaced an unoptimized O(N<sup>2</sup>)
 	 nested loop with a Max-Heap structure.
-     This optimized candidate sorting down to an efficient<p>O(N log K)</p>complexity. The system now
+     This optimized candidate sorting down to an efficient O(N log K) complexity. The system now
      computes heuristic suitability score dynamically. I integrated tuple tiebreakers
      to prevent runtime heap crashes.<o:p></o:p></span></li>
 </ul>
@@ -2169,10 +2169,10 @@ outcomes established in Module One and then some:<o:p></o:p></span></p>
   <li class=MsoNormal style='mso-list:l2 level2 lfo2;tab-stops:list 1.0in'><span
       style='font-family:"Times New Roman",serif'>Rather than relying on
       computationally heavy database-side aggregations or inefficient linear
-      list sorting<p>( O(NlogN) )</p>or a broken nested loop
-      resulting in <p>$$O(N^2)$$</p> the updated application
+      list sorting ( O(NlogN) ) or a broken nested loop
+      resulting in O(N^2) the updated application
       builds a bounded heap structure. This optimizes top candidate extraction
-      down to an efficient<p>O(N log K)</p>time complexity, balancing
+      down to an efficient O(N log K) time complexity, balancing
       local execution speeds against server constraints.<o:p></o:p></span></li>
   <li class=MsoNormal style='mso-list:l2 level2 lfo2;tab-stops:list 1.0in'><span
       style='font-family:"Times New Roman",serif'>I also addressed an inherent
