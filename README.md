@@ -11,7 +11,7 @@
 
 ### Finalized Enhancements
 
-* **Narrative:** [Milestone Two Narrative Update](MilestoneTwo_NarrativeUpdate.htm)
+* **Narrative:** [Milestone Two Narrative Update](MilestoneTwo_NarrativeUpdate.html)
 * **Java Code:** [Boarding Manager](BoardingManager.java)
 * **Java Code:** [New Dog Class](NewDog.java)
 * **Java Code:** [New Pet Class](NewPet.java)
@@ -29,7 +29,7 @@
 
 ### Finalized Enhancements
 
-* **Narrative:** [Milestone Three Narrative Update](MilestoneThree_Narrative.htm)
+* **Narrative:** [Milestone Three Narrative Update](MilestoneThree_Narrative.html)
 * **Python Code:** [Updated Grazioso Salvare](Updated_GraziosoSalvare.ipynb)
 * **Python Code:** [Updated aac crud](Updated_aac_crud.py)
 
