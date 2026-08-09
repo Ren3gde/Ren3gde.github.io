@@ -17,7 +17,7 @@ bg_color: "#1a0208"
 * **Design Patterns:** Strengthened the object-oriented structure by introducing defensive copying techniques to prevent data exposure and maintain state integrity.
 
 ### Original Files
-* **Python Code:** [Grazioso Salvare](ProjectTwoDashbaord.ipynb)
+* **Python Code:** [Grazioso Salvare](https://nbviewer.org/github/Ren3gde/Ren3gde.github.io/blob/main/ProjectTwoDashboard.ipynb)
 * **Python Code:** [aac crud](aac_crud.css)
 
 ### Finalized Enhancements
