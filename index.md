@@ -45,4 +45,27 @@ description: Bookmark this to keep an eye on my project updates!
 body, .wrapper, header, section, footer {
   background: transparent !important;
 }
+
+/* Changes all layout headings, normal text, and links to white */
+body, h1, h2, h3, p, li, header, section, footer {
+  color: #ffffff !important;
+}
+
+/* Enhances link readability with bright cyan/blue highlights */
+a {
+  color: #00d2ff !important;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hover effect to make links interactive when moused over */
+a:hover {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+/* Optional: Adds a dark glow behind the title and text to separate it from the busy circuit lines */
+.wrapper, header, section {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.85);
+}
 </style>
