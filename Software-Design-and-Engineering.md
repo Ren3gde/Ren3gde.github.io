@@ -16,6 +16,11 @@ bg_color: "#1a0208"
 * **Key Enhancements:** Inheritance Refactoring: The subclass structure was redesigned to establish clean constructor delegation using super(). Financial Type Safety: By stripping away inaccurate primitive types, it directly neutralized the binary floating-point rounding bugs common in native Java math.
 * **Design Patterns:** Implemented the Encapsulation pattern to safeguard data mutation and applied standard Java naming conventions to enhance maintainability.
 
+### Original Files
+
+* **Java Code:** [Pet Class](Pet.java)
+* **Java Code:** [Dog Class](Dog.java)
+
 ### Finalized Enhancements
 
 * **Narrative:** [Milestone Two Narrative Update](MilestoneTwo_NarrativeUpdate.html)
