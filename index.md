@@ -7,7 +7,7 @@ description: Bookmark this to keep an eye on my project updates!
 <!-- Video Background Setup -->
 <div class="video-bg-container">
   <video autoplay loop muted playsinline class="video-bg">
-    <source src="/background.mp4" type="video/mp4">
+    <source src="/backgrounds.mp4" type="video/mp4">
   </video>
 </div>
 
