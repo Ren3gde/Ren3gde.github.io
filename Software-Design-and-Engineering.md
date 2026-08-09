@@ -1,4 +1,4 @@
-[Home](/) | [Software Design](/Software-Design-and-Engineering.md) | [Algorithms](/Algorithms-and-Data-Structure.md) | [Databases](/Databases.md)
+[About Me](/) | [Software Design](/Software-Design-and-Engineering.md) | [Algorithms](/Algorithms-and-Data-Structure.md) | [Databases](/Databases.md)
 
 # Software Design & Engineering
 
