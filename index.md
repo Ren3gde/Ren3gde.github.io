@@ -11,7 +11,7 @@ description: Bookmark this to keep an eye on my project updates!
   </video>
 </div>
 
-[About Me](/) | [Software Design](/Software-Design-and-Engineering) | [Algorithms](/Algorithms-and-Data-Structure) | [Databases](/Databases)
+[Home](index.md)[About Me](/) | [Software Design](/Software-Design-and-Engineering) | [Algorithms](/Algorithms-and-Data-Structure) | [Databases](/Databases)
 
 ---
 
