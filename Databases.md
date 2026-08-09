@@ -17,7 +17,7 @@ bg_color: "#1a0208"
 * **Design Patterns:** Implemented standardized validation schemas to guarantee data uniformity across external databases and mitigate cross-system calculation errors.
 
 ### Original File
-* **SQL Code:** [RMA Report](DAD-220-Project-Two.hmtl)
+* **SQL Code:** [RMA Report](DAD-220-Project-Two.html)
 
 ### Finalized Enhancements
 
