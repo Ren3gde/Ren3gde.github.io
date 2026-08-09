@@ -1,4 +1,9 @@
-[About Me](/) | [Software Design](/Software-Design-and-Engineering.md) | [Algorithms](/Algorithms-and-Data-Structure.md) | [Databases](Databases.md)
+---
+layout: default
+bg_color: "#1a0208"
+---
+
+[About Me](README.md) | [Software Design](/Software-Design-and-Engineering.md) | [Algorithms](/Algorithms-and-Data-Structure.md) | [Databases](Databases.md)
 
 # Databases
 
