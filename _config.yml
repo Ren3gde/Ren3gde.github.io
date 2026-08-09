@@ -2,6 +2,7 @@ theme: jekyll-theme-minimal
 title: Ren3gde's homepage
 description: Bookmark this to keep an eye on my project updates!
 
+[Home](README.md) | [Software Design](Software Design and Engineering.md) | [Algorithms](Algorithms and Data Structure.md) | [Databases](Databases)
 
-[Home](README.md) | [Software Design](Software Design & Engineering.md) | [Algorithms](Algorithms and Data Structure.md) | [Databases](Databases.md)
+
 
