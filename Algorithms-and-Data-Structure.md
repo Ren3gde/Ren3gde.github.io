@@ -23,5 +23,5 @@ bg_color: "#1a0208"
 ### Finalized Enhancements
 
 * **Narrative:** [Milestone Three Narrative Update](MilestoneThree_Narrative.html)
-* **Python Code:** [Updated Grazioso Salvare](https://nbviewer.org/urls/ren3gde.github.io/Updated_GraziosoSalvare.ipynb)
+* **Python Code:** [Updated Grazioso Salvare](https://nbviewer.org/github/Ren3gde/Ren3gde.github.io/blob/main/Updated_GraziosoSalvare.ipynb)
 * **Python Code:** [Updated aac crud](Updated_aac_crud.css)
