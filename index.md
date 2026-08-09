@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Ren3gde's homepage
+title: Ren3gde's Homepage
 description: Bookmark this to keep an eye on my project updates!
 ---
 
