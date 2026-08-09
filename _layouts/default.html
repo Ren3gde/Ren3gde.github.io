@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% seo %}
+  </head>
+  <body>
+
+    <!-- GLOBAL VIDEO BACKGROUND (Homepage Only) -->
+    {% if page.url == "/" or page.url == "/index.html" %}
+    <div class="video-bg-container">
+      <video autoplay loop muted playsinline class="video-bg">
+        <source src="/backgrounds.mp4" type="video/mp4">
+      </video>
+    </div>
+    {% endif %}
+
+    <div class="wrapper">
+      <header>
+        <h1><a href="{{ '/' | relative_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
+      </header>
+      <section>
+        {{ content }}
+      </section>
+      <footer>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com">orderedlist</a></small></p>
+      </footer>
+    </div>
+
+    <!-- GLOBAL STYLING RULES -->
+    <style>
+      /* Handle backgrounds dynamically */
+      body {
+        background-color: {{ page.bg_color | default: "transparent" }} !important;
+      }
+      .video-bg-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        overflow: hidden;
+      }
+      .video-bg {
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        opacity: 0.45;
+      }
+      .wrapper, header, section, footer {
+        background: transparent !important;
+      }
+      body, h1, h2, h3, p, li, header, section, footer {
+        color: #ffffff !important;
+      }
+      .wrapper, header, section {
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.85);
+      }
+      a {
+        color: #38bdf8 !important;
+        font-weight: 600;
+      }
+      a:hover {
+        color: #ffffff !important;
+      }
+    </style>
+  </body>
+</html>
