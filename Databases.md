@@ -4,7 +4,7 @@ title: Databases
 permalink: /Datbases/
 ---
 
-[Home] (README.md) | [Software Design] (Software Design & Engineering.md) | [Algorithms] (Algorithms and Data Structure.md) | [Databases] (Databases.md)
+[Home](/) | [Software Design](/Software-Design-and-Engineering.md) | [Algorithms](/Algorithms-and-Data-Structure.md) | [Databases](Databases.md)
 
 # Databases
 
