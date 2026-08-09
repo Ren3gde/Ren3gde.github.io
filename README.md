@@ -3,7 +3,7 @@ layout: default
 bg_color: "#1a0208"
 ---
 
-[Home](index.md)[About Me](/) | [Software Design](/Software-Design-and-Engineering) | [Algorthims](Algorithms-and-Data-Structure) | [Databases](/Databases)
+[Home](/index.md) | [About Me](/README.md) | [Software Design](/Software-Design-and-Engineering) | [Algorithms](/Algorithms-and-Data-Structure) | [Databases](/Databases)
 
 # Professional Self-Assessment
 
