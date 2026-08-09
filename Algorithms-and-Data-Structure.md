@@ -16,6 +16,10 @@ bg_color: "#1a0208"
 * **Key Enhancements:** Optimized data manipulation pipelines and streamlined array management routines to ensure accurate data storage and fast system updates.
 * **Design Patterns:** Strengthened the object-oriented structure by introducing defensive copying techniques to prevent data exposure and maintain state integrity.
 
+### Original Files
+* **Python Code:** [Grazioso Salvare](ProjectTwoDashbaord.ipynb)
+* **Python Code:** [aac crud](aac_crud.css)
+
 ### Finalized Enhancements
 
 * **Narrative:** [Milestone Three Narrative Update](MilestoneThree_Narrative.html)
