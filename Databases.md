@@ -1,10 +1,4 @@
----
-layout: page
-title: Databases
-permalink: /Datbases/
----
-
-[Home](/) | [Software Design](/Software-Design-and-Engineering.md) | [Algorithms](/Algorithms-and-Data-Structure.md) | [Databases](Databases.md)
+[About Me](/) | [Software Design](/Software-Design-and-Engineering.md) | [Algorithms](/Algorithms-and-Data-Structure.md) | [Databases](Databases.md)
 
 # Databases
 
