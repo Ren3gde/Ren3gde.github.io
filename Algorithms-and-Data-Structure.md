@@ -3,7 +3,7 @@ layout: default
 bg_color: "#1a0208"
 ---
 
-[Home](index.md)[About Me](README.md) | [Software Design](/Software-Design-and-Engineering.md) | [Algorithms](/Algorithms-and-Data-Structure.md) | [Databases](Databases.md)
+[Home](index.md) | [About Me](README.md) | [Software Design](/Software-Design-and-Engineering.md) | [Algorithms](/Algorithms-and-Data-Structure.md) | [Databases](Databases.md)
 
 # Algorithms and Data Structure
 
