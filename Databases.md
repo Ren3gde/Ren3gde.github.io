@@ -17,3 +17,7 @@ bg_color: "#1a0208"
 * **Design Patterns:** Implemented standardized validation schemas to guarantee data uniformity across external databases and mitigate cross-system calculation errors.
 
 ### Finalized Enhancements
+
+* **Narrative:** [Milestone Four Narrative Update](MilestoneFour_Narrative.html)
+* **SQL Code:** [Updated RMA Report](Enhanced_RMA_Report.html)
+
