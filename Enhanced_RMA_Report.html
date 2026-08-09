@@ -1941,7 +1941,7 @@ v:shapes="Picture_x0020_3"><![endif]></span><b><span style='font-family:"Times N
 
 <p class=MsoNormal style='line-height:200%'><span style='font-family:"Times New Roman",serif'>The
 analysis reveals that the Basic Switch 10/100/1000 <span class=SpellE>BaseT</span>
-48-port—<span class=SpellE>Quantigration’s</span> top-selling product—is
+48-portÂ—<span class=SpellE>QuantigrationÂ’s</span> top-selling productÂ—is
 experiencing high return rates exceeding 7% across three categories:<o:p></o:p></span></p>
 
 <ul style='margin-top:0in' type=disc>
@@ -1988,8 +1988,8 @@ Data Masking &amp; PII Anonymization<o:p></o:p></span></b></p>
 <p class=MsoNormal style='line-height:200%'><span style='font-family:"Times New Roman",serif'>To
 ensure regulatory compliance (such as GDPR or CCPA), a programmatic masking
 layer intercepts data. Sensitive data columns containing Personally
-Identifiable Information (PII)—specifically customer names and street
-addresses—are passed through a string manipulation mask function to protect
+Identifiable Information (PII)Â—specifically customer names and street
+addressesÂ—are passed through a string manipulation mask function to protect
 customer privacy.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:200%'><b><span style='font-family:"Times New Roman",serif'>C.
@@ -2026,18 +2026,18 @@ table to eliminate flat-text redundancy<o:p></o:p></span></p>
 class=SpellE>RMA_Reason_Codes</span> (<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span><span class=SpellE>ReasonCodeID</span> INT
+style='mso-spacerun:yes'>Â Â Â  </span><span class=SpellE>ReasonCodeID</span> INT
 PRIMARY KEY AUTO_INCREMENT,<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>Category VARCHAR(50) NOT NULL,<span
-style='mso-spacerun:yes'>       </span></span><span style='font-family:"Times New Roman",serif'>--
+style='mso-spacerun:yes'>Â Â Â  </span>Category VARCHAR(50) NOT NULL,<span
+style='mso-spacerun:yes'>Â Â Â Â Â Â  </span></span><span style='font-family:"Times New Roman",serif'>--
 e.g., &quot;Shipping Error&quot;, &quot;Hardware</span> Failure&quot;</p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
+<p class=MsoNormal><span style='mso-spacerun:yes'>Â Â Â  </span><span
 class=SpellE><span style='font-family:Consolas'>SubCategory</span></span><span
 style='font-family:Consolas'> VARCHAR(100) NOT NULL<span
-style='mso-spacerun:yes'>   </span></span><span style='font-family:"Times New Roman",serif'>--
+style='mso-spacerun:yes'>Â Â  </span></span><span style='font-family:"Times New Roman",serif'>--
 e.g., &quot;Wrong Part Sent&quot;, &quot;Defective Unit&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal>);</p>
@@ -2050,27 +2050,27 @@ table enforcing database-level Foreign Key constraints<o:p></o:p></span></p>
 <p class=MsoNormal><span style='font-family:Consolas'>CREATE TABLE RMA (<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span><span class=SpellE>rma_id</span> INT
+style='mso-spacerun:yes'>Â Â Â  </span><span class=SpellE>rma_id</span> INT
 PRIMARY KEY AUTO_INCREMENT,<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span><span class=SpellE>order_id</span> INT NOT
+style='mso-spacerun:yes'>Â Â Â  </span><span class=SpellE>order_id</span> INT NOT
 NULL,<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span><span class=SpellE>ReasonCodeID</span> INT
-NOT NULL,<span style='mso-spacerun:yes'>    </span>--</span> Replaces the
+style='mso-spacerun:yes'>Â Â Â  </span><span class=SpellE>ReasonCodeID</span> INT
+NOT NULL,<span style='mso-spacerun:yes'>Â Â Â  </span>--</span> Replaces the
 vague, flat-text field</p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
+<p class=MsoNormal><span style='mso-spacerun:yes'>Â Â Â  </span><span
 class=SpellE>return_status</span> VARCHAR(20) NOT NULL,</p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>FOREIGN KEY (<span class=SpellE>ReasonCodeID</span>)
+style='mso-spacerun:yes'>Â Â Â  </span>FOREIGN KEY (<span class=SpellE>ReasonCodeID</span>)
 REFERENCES <span class=SpellE>RMA_Reason_Codes</span>(<span class=SpellE>ReasonCodeID</span>),<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>FOREIGN KEY (<span class=SpellE>order_id</span>)
+style='mso-spacerun:yes'>Â Â Â  </span>FOREIGN KEY (<span class=SpellE>order_id</span>)
 REFERENCES Orders(<span class=SpellE>order_id</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'>);<o:p></o:p></span></p>
@@ -2108,28 +2108,28 @@ class=SpellE>MaskSensitiveData</span>(<span class=SpellE>input_string</span>, <s
 class=SpellE>mask_type</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>IF <span class=SpellE>mask_type</span> ==
+style='mso-spacerun:yes'>Â Â Â  </span>IF <span class=SpellE>mask_type</span> ==
 &quot;PII_NAME&quot; THEN<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>RETURN
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>RETURN
 &quot;CONFIDENTIAL_CUSTOMER_NAME&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>ELSEIF <span class=SpellE>mask_type</span>
+style='mso-spacerun:yes'>Â Â Â  </span>ELSEIF <span class=SpellE>mask_type</span>
 == &quot;PII_ADDRESS&quot; THEN<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>RETURN &quot;REDACTED_ADDRESS&quot;<o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>RETURN &quot;REDACTED_ADDRESS&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>ELSE<o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â  </span>ELSE<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>RETURN &quot;REDACTED&quot;<o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>RETURN &quot;REDACTED&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>ENDIF<o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â  </span>ENDIF<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'>ENDFUNCTION<o:p></o:p></span></p>
 
@@ -2145,104 +2145,104 @@ Secure Parameterized Fetch Architecture<o:p></o:p></span></b></p>
 <span class=SpellE>input_end_date</span>, <span class=SpellE>input_state</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>INITIALIZE <span class=SpellE>sql_query</span>
+style='mso-spacerun:yes'>Â Â Â  </span>INITIALIZE <span class=SpellE>sql_query</span>
 AS STRING = <o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>&quot;SELECT <span class=SpellE>o.order_id</span>,
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>&quot;SELECT <span class=SpellE>o.order_id</span>,
 <span class=SpellE>o.order_date</span>, <span class=SpellE>o.order_status</span>,
 <span class=SpellE>r.rma_id</span>, <span class=SpellE>r.return_reason</span><o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>         </span>FROM Orders o<o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â Â  </span>FROM Orders o<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>         </span>LEFT JOIN RMA r ON <span class=SpellE>o.order_id</span>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â Â  </span>LEFT JOIN RMA r ON <span class=SpellE>o.order_id</span>
 = <span class=SpellE>r.order_id</span><o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>         </span>WHERE <span class=SpellE>o.order_date</span>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â Â  </span>WHERE <span class=SpellE>o.order_date</span>
 BETWEEN ? AND ? AND <span class=SpellE>o.order_status</span> = ?&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>TRY<o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â  </span>TRY<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>INITIALIZE <span class=SpellE>prepared_statement</span>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>INITIALIZE <span class=SpellE>prepared_statement</span>
 = PREPARE_STATEMENT(<span class=SpellE>sql_query</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>BIND_PARAMETER(<span class=SpellE>prepared_statement</span>,
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>BIND_PARAMETER(<span class=SpellE>prepared_statement</span>,
 1, <span class=SpellE>input_start_date</span>, TYPE_DATE)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>BIND_PARAMETER(<span class=SpellE>prepared_statement</span>,
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>BIND_PARAMETER(<span class=SpellE>prepared_statement</span>,
 2, <span class=SpellE>input_end_date</span>, TYPE_DATE)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>BIND_PARAMETER(<span class=SpellE>prepared_statement</span>,
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>BIND_PARAMETER(<span class=SpellE>prepared_statement</span>,
 3, <span class=SpellE>input_state</span>, TYPE_STRING)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>INITIALIZE <span class=SpellE>query_results</span>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>INITIALIZE <span class=SpellE>query_results</span>
 = EXECUTE_STATEMENT(<span class=SpellE>prepared_statement</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>INITIALIZE <span class=SpellE>report_data_buffer</span>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>INITIALIZE <span class=SpellE>report_data_buffer</span>
 = EMPTY_LIST<o:p></o:p></span></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>FOR EACH row IN <span class=SpellE>query_results</span><o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>FOR EACH row IN <span class=SpellE>query_results</span><o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>            </span>INITIALIZE <span class=SpellE>safe_record</span>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â Â Â Â Â  </span>INITIALIZE <span class=SpellE>safe_record</span>
 = RECORD<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>            </span><span class=SpellE>safe_record.order_id</span>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â Â Â Â Â  </span><span class=SpellE>safe_record.order_id</span>
 = <span class=SpellE>row.order_id</span><o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>            </span><span class=SpellE>safe_record.status</span>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â Â Â Â Â  </span><span class=SpellE>safe_record.status</span>
 = <span class=SpellE>row.order_status</span><o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>            </span><span class=SpellE>safe_record.rma_id</span>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â Â Â Â Â  </span><span class=SpellE>safe_record.rma_id</span>
 = <span class=SpellE>row.rma_id</span><o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>            </span><span class=SpellE>safe_record.customer_name</span>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â Â Â Â Â  </span><span class=SpellE>safe_record.customer_name</span>
 = <span class=SpellE>MaskSensitiveData</span>(<span class=SpellE>row.customer_name</span>,
 &quot;PII_NAME&quot;)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>            </span>APPEND <span class=SpellE>safe_record</span>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â Â Â Â Â  </span>APPEND <span class=SpellE>safe_record</span>
 TO <span class=SpellE>report_data_buffer</span><o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>ENDFOR<o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>ENDFOR<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>RETURN <span class=SpellE>report_data_buffer</span><o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>RETURN <span class=SpellE>report_data_buffer</span><o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>CATCH <span class=SpellE>database_error</span><o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â  </span>CATCH <span class=SpellE>database_error</span><o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>LOG &quot;Database error occurred
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>LOG &quot;Database error occurred
 safely: &quot; + <span class=SpellE>database_error.message</span><o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>RETURN EMPTY_LIST<o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>RETURN EMPTY_LIST<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>ENDTRY<o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â  </span>ENDTRY<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:200%'><span style='font-family:Consolas'>ENDFUNCTION<o:p></o:p></span></p>
 
@@ -2253,22 +2253,22 @@ Seeding Data Categories &amp; Secure Application Insertion Logic<o:p></o:p></spa
 <span class=SpellE>default_reason_codes</span> AS LIST = [<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>{ id: 1, cat: &quot;Shipping
-Error&quot;,<span style='mso-spacerun:yes'>  </span>sub: &quot;Wrong Part
+style='mso-spacerun:yes'>Â Â Â  </span>{ id: 1, cat: &quot;Shipping
+Error&quot;,<span style='mso-spacerun:yes'>Â  </span>sub: &quot;Wrong Part
 Sent&quot; },<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>{ id: 2, cat: &quot;Shipping
-Error&quot;,<span style='mso-spacerun:yes'>  </span>sub: &quot;Damaged in
+style='mso-spacerun:yes'>Â Â Â  </span>{ id: 2, cat: &quot;Shipping
+Error&quot;,<span style='mso-spacerun:yes'>Â  </span>sub: &quot;Damaged in
 Transit&quot; },<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>{ id: 3, cat: &quot;Product
-Defect&quot;,<span style='mso-spacerun:yes'>  </span>sub: &quot;Hardware
+style='mso-spacerun:yes'>Â Â Â  </span>{ id: 3, cat: &quot;Product
+Defect&quot;,<span style='mso-spacerun:yes'>Â  </span>sub: &quot;Hardware
 Malfunction&quot; },<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>{ id: 4, cat: &quot;Customer Choice&quot;,
+style='mso-spacerun:yes'>Â Â Â  </span>{ id: 4, cat: &quot;Customer Choice&quot;,
 sub: &quot;Changed Mind / No Longer Needed&quot; }<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'>]<o:p></o:p></span></p>
@@ -2280,66 +2280,66 @@ class=SpellE>ProcessNewRMA</span>(<span class=SpellE>input_order_id</span>, <spa
 class=SpellE>selected_reason_code_id</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>CONNECT TO DATABASE <span class=SpellE>CustomerAnalytics</span><o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â  </span>CONNECT TO DATABASE <span class=SpellE>CustomerAnalytics</span><o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>TRY<o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â  </span>TRY<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>INITIALIZE <span class=SpellE>insert_query</span>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>INITIALIZE <span class=SpellE>insert_query</span>
 AS STRING = <o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>            </span>&quot;INSERT INTO RMA (<span
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â Â Â Â Â  </span>&quot;INSERT INTO RMA (<span
 class=SpellE>order_id</span>, <span class=SpellE>ReasonCodeID</span>, <span
 class=SpellE>return_status</span>) VALUES (?, ?, 'PENDING')&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>INITIALIZE statement =
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>INITIALIZE statement =
 PREPARE_STATEMENT(<span class=SpellE>insert_query</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>BIND_PARAMETER(statement, 1, <span
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>BIND_PARAMETER(statement, 1, <span
 class=SpellE>input_order_id</span>, TYPE_INT)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>BIND_PARAMETER(statement, 2, <span
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>BIND_PARAMETER(statement, 2, <span
 class=SpellE>selected_reason_code_id</span>, TYPE_INT)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>EXECUTE_STATEMENT(statement)<o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>EXECUTE_STATEMENT(statement)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>LOG &quot;RMA successfully created with
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>LOG &quot;RMA successfully created with
 validated, high-integrity reason code.&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>RETURN TRUE<o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>RETURN TRUE<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>CATCH <span class=SpellE>foreign_key_violation_error</span><o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â  </span>CATCH <span class=SpellE>foreign_key_violation_error</span><o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>LOG &quot;Data Integrity Error: Invalid
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>LOG &quot;Data Integrity Error: Invalid
 <span class=SpellE>ReasonCodeID</span> selected. Input rejected.&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>RETURN FALSE<o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>RETURN FALSE<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>CATCH <span class=SpellE>generic_database_error</span><o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â  </span>CATCH <span class=SpellE>generic_database_error</span><o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>LOG &quot;Database error occurred:
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>LOG &quot;Database error occurred:
 &quot; + <span class=SpellE>generic_database_error.message</span><o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>RETURN FALSE<o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>RETURN FALSE<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>ENDTRY<o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â  </span>ENDTRY<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:200%'><span style='font-family:Consolas'>ENDFUNCTION<o:p></o:p></span></p>
 
@@ -2350,11 +2350,11 @@ SQL Optimization &amp; Critical Syntax Mitigation (Query B)<o:p></o:p></span></b
 <span class=SpellE>FetchReturnPercentagesReport</span>()<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:200%'><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>CONNECT TO DATABASE <span class=SpellE>CustomerAnalytics</span>
+style='mso-spacerun:yes'>Â Â Â  </span>CONNECT TO DATABASE <span class=SpellE>CustomerAnalytics</span>
 DB_USER &quot;<span class=SpellE>report_analyst_ro</span>&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:200%'><span style='font-family:"Times New Roman",serif'><span
-style='mso-spacerun:yes'>    </span>-- Fixes </span><span style='font-family:
+style='mso-spacerun:yes'>Â Â Â  </span>-- Fixes </span><span style='font-family:
 Consolas;mso-bidi-font-family:"Times New Roman"'>'<span class=SpellE>Orders.Descripton</span>'</span><span
 style='font-family:"Times New Roman",serif'> and </span><span style='font-family:
 Consolas;mso-bidi-font-family:"Times New Roman"'>'RETURN_PECENTAGE'</span><span
@@ -2362,71 +2362,71 @@ style='font-family:"Times New Roman",serif'> spelling typos that break
 compilation.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:200%'><span style='font-family:"Times New Roman",serif'><span
-style='mso-spacerun:yes'>    </span>-- Multiplies </span><span class=GramE><span
+style='mso-spacerun:yes'>Â Â Â  </span>-- Multiplies </span><span class=GramE><span
 style='font-family:Consolas;mso-bidi-font-family:"Times New Roman"'>counts</span></span><span
 style='font-family:Consolas;mso-bidi-font-family:"Times New Roman"'> </span><span
 style='font-family:"Times New Roman",serif'>by '100.0' to force float
 promotion, protecting analytical math accuracy.<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>INITIALIZE <span class=SpellE>optimized_query_B</span>
+style='mso-spacerun:yes'>Â Â Â  </span>INITIALIZE <span class=SpellE>optimized_query_B</span>
 AS STRING = <o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>&quot;SELECT <o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>&quot;SELECT <o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>            </span>ROUND((COUNT(*) * 100.0 / (SELECT
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â Â Â Â Â  </span>ROUND((COUNT(*) * 100.0 / (SELECT
 COUNT(*) FROM RMA)), 2) AS RETURN_PERCENTAGE,<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>            </span><span class=SpellE>Orders.Description</span>,<o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â Â Â Â Â  </span><span class=SpellE>Orders.Description</span>,<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>            </span><span class=SpellE>RMA.Reason</span><o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â Â Â Â Â  </span><span class=SpellE>RMA.Reason</span><o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>         </span>FROM Orders<o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â Â  </span>FROM Orders<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>         </span>INNER JOIN RMA ON <span class=SpellE>Orders.OrderID</span>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â Â  </span>INNER JOIN RMA ON <span class=SpellE>Orders.OrderID</span>
 = <span class=SpellE>rma.OrderID</span><o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>         </span>GROUP BY <span class=SpellE>Orders.Description</span>,
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â Â  </span>GROUP BY <span class=SpellE>Orders.Description</span>,
 <span class=SpellE>RMA.Reason</span><o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>         </span>ORDER BY RETURN_PERCENTAGE DESC&quot;<o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â Â  </span>ORDER BY RETURN_PERCENTAGE DESC&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>TRY<o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â  </span>TRY<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>INITIALIZE statement =
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>INITIALIZE statement =
 PREPARE_STATEMENT(<span class=SpellE>optimized_query_B</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>INITIALIZE <span class=SpellE>result_dataset</span>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>INITIALIZE <span class=SpellE>result_dataset</span>
 = EXECUTE_STATEMENT(statement)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>RETURN <span class=SpellE>result_dataset</span><o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>RETURN <span class=SpellE>result_dataset</span><o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>CATCH <span class=SpellE>compilation_or_execution_error</span><o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â  </span>CATCH <span class=SpellE>compilation_or_execution_error</span><o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>LOG &quot;Database optimization failure
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>LOG &quot;Database optimization failure
 on Query B: &quot; + <span class=SpellE>compilation_or_execution_error.message</span><o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>        </span>RETURN EMPTY_LIST<o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â Â Â Â Â  </span>RETURN EMPTY_LIST<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>ENDTRY<o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â  </span>ENDTRY<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:200%'><span style='font-family:Consolas'>ENDFUNCTION<o:p></o:p></span></p>
 
@@ -2436,50 +2436,50 @@ Main Application Execution Flow &amp; Reporting Coordinator<o:p></o:p></span></b
 <p class=MsoNormal style='line-height:200%'><span style='font-family:Consolas'>MAIN<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>LOG &quot;Starting Optimized Performance
+style='mso-spacerun:yes'>Â Â Â  </span>LOG &quot;Starting Optimized Performance
 Reporting Execution...&quot;<o:p></o:p></span></p>
 
-<p class=MsoNormal style='line-height:200%'><span style='mso-spacerun:yes'>   
+<p class=MsoNormal style='line-height:200%'><span style='mso-spacerun:yes'>Â Â Â 
 </span><span style='font-family:"Times New Roman",serif'>// Proof of Concept:
 Neutralizing a malicious SQL Injection Input Payload via Parameterization<o:p></o:p></span></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
+<p class=MsoNormal><span style='mso-spacerun:yes'>Â Â Â  </span><span
 style='font-family:Consolas'>INITIALIZE <span class=SpellE>user_start_date</span>
 = &quot;2026-01-01&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>INITIALIZE <span class=SpellE>user_end_date</span>
+style='mso-spacerun:yes'>Â Â Â  </span>INITIALIZE <span class=SpellE>user_end_date</span>
 = &quot;2026-12-31&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>INITIALIZE <span class=SpellE>malicious_user_state</span>
+style='mso-spacerun:yes'>Â Â Â  </span>INITIALIZE <span class=SpellE>malicious_user_state</span>
 = &quot;COMPLETED' OR '1'='1&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
 <p class=MsoNormal><span style='font-family:"Times New Roman",serif'><span
-style='mso-spacerun:yes'>    </span>// Execute optimized data processes<o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â  </span>// Execute optimized data processes<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>INITIALIZE <span class=SpellE>state_report</span>
+style='mso-spacerun:yes'>Â Â Â  </span>INITIALIZE <span class=SpellE>state_report</span>
 = <span class=SpellE>FetchStateReturnsCount</span>()<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>DISPLAY <span class=SpellE>state_report</span><o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â  </span>DISPLAY <span class=SpellE>state_report</span><o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>INITIALIZE <span class=SpellE>percentage_report</span>
+style='mso-spacerun:yes'>Â Â Â  </span>INITIALIZE <span class=SpellE>percentage_report</span>
 = <span class=SpellE>FetchReturnPercentagesReport</span>()<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>DISPLAY <span class=SpellE>percentage_report</span><o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â Â Â  </span>DISPLAY <span class=SpellE>percentage_report</span><o:p></o:p></span></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
 <p class=MsoNormal><span style='font-family:Consolas'><span
-style='mso-spacerun:yes'>    </span>LOG &quot;Performance and optimization
+style='mso-spacerun:yes'>Â Â Â  </span>LOG &quot;Performance and optimization
 reports compiled successfully.&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:200%'><span style='font-family:Consolas'>ENDMAIN<o:p></o:p></span></p>
